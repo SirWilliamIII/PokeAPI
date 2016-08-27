@@ -60,7 +60,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 		
 		if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokeCell", for: indexPath) as? PokeCell{
 			
-			let poke = pokemon[indexPath.row]
+			let poke = pokemon[]
 			cell.configureCell(poke)
 			
 			return cell
@@ -75,6 +75,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 	// this will be an IBAction, what occurs when the cell is touched
 	
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		
 		
 	}
 	
